@@ -1,7 +1,11 @@
 package org.system.design.pattern.phone;
 
 public class OperationSystemFactory {
+
+    String type;
+
     public OS getInstance(String type){
+
         if(type.equals("open")){
             return new Android();
         }
